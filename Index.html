@@ -1,12 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <title>CS 1130 - Introduction to Computing</title>
+        <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #000000, #434343);
+            color: #fff;
+            border: 10px solid;
+            animation: borderColorChange 3s infinite alternate;
+            box-sizing: border-box;
+        }
 
-</body>
+        @keyframes borderColorChange {
+            0% {
+                border-color: #ffffff;
+            }
+            25% {
+                border-color: #6f6a71;
+            }
+            50% {
+                border-color: #ff9900;
+            }
+            75% {
+                border-color: #b3b3b3;
+            }
+            100% {
+                border-color: #ff9900;
+            }
+        }
+
+        header {
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+            animation: fadeInHeader 3s ease-in-out;
+            border: 5px solid transparent;
+        }
+
+        @keyframes fadeInHeader {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: slideInText 3s ease-in-out;
+        }
+
+        @keyframes slideInText {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .element {
+            animation: bounce 1s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        section {
+            margin-bottom: 1.5em;
+        }
+
+        h2 {
+            border-top: 2px solid #d5e1df;
+            padding-top: 0.5em;
+            margin-top: 1em;
+            border-bottom: 2px solid #d5e1df;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>CS 1130 - Introduction to Computing</h1>
+        </header>
+
+        <main>
+            <section>
+                <p>This website is designed to meet the requirements for the Intro to Computing course (CS 1130).
+                   It features links to various pages that offer tools and functions, including a conversion tool,
+                   an income tax calculator, a factorial calculator using a while loop, a sum calculator with a 
+                   do-while loop, an average calculator for the first N natural numbers using a for loop, and a 
+                   simple payroll tool.</p>
+            </section>
+
+            <section>
+                <h2>Student Info</h2>
+                <p>Student Name: Jim Mariscal</p>
+                <p>Course: BSCS</p>
+                <p>Subject Code: CS 1130</p>
+            </section>
+
+            <section>
+                <h2>Student Assignments</h2>
+                <ul>
+                <li><strong>Assignment #1:</strong> <a href="Conversion.html">Conversion (Celsius to Fahrenheit, Fahrenheit to Celsius, Meters to Feet, Feet to Meters)</a></li>
+                <li><strong>Assignment #2:</strong> <a href="IncomeTaxCalculator.html">Income Tax Calculator</a></li>
+                <li><strong>Assignment #3:</strong> <a href="Factorial.html">Factorial (While Loop), Sum (Do While Loop), and Average (For Loop) of First N Natural Numbers</a></li>
+                <li><strong>Assignment #4:</strong> <a href="SimplePayroll.html">Simple Payroll</a></li>
+            </ul>
+            </section>
+
+        </main>        
+    </body>
 </html>
